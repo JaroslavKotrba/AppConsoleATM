@@ -75,7 +75,7 @@ public partial class cardHolder
 
         // Connection SQL
         List<cardHolder> cardHolders = new List<cardHolder>();
-        Connect("root", "8bulwark5", "bank");
+        Connect("root", "localPassword", "bank");
 
             string query = "SELECT * FROM customers";
             MySqlCommand cmd = new MySqlCommand(query, con);
